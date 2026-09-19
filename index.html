@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS CI/CD Deployment Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            background: #1e3a8a;
+            color: white;
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 720px;
+            margin: auto;
+            font-size: 18px;
+            color: #dbeafe;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 12px 24px;
+            background: #f59e0b;
+            color: #172554;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+
+        .section {
+            padding: 55px 8%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 30px;
+            color: #172554;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 850px;
+            margin: auto;
+            color: #4b5563;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            color: #1e3a8a;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        .workflow {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .workflow div {
+            padding: 15px;
+            margin: 10px 0;
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            border-radius: 5px;
+        }
+
+        .workflow strong {
+            color: #1e3a8a;
+        }
+
+        .results {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 55px 8%;
+        }
+
+        .results h2 {
+            margin-bottom: 18px;
+        }
+
+        .results p {
+            max-width: 750px;
+            margin: auto;
+            color: #dbeafe;
+        }
+
+        footer {
+            background: #0f172a;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                margin-left: 8px;
+            }
+
+            .section {
+                padding: 40px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>AWS Cloud & DevOps</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#technologies">Technologies</a>
+            <a href="#workflow">Workflow</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Automated Web Application Deployment</h1>
+
+        <p>
+            A cloud deployment project using GitHub,
+            AWS CodePipeline, and AWS Elastic Beanstalk
+            to automate web application delivery.
+        </p>
+
+        <a href="#workflow" class="btn">Explore Project</a>
+    </section>
+
+    <section class="section" id="about">
+        <h2>Project Overview</h2>
+
+        <p class="about">
+            This project demonstrates a CI/CD workflow for deploying
+            a web application from a GitHub repository to AWS Elastic
+            Beanstalk using AWS CodePipeline. The pipeline supports
+            development deployment, manual approval, and production
+            deployment.
+        </p>
+    </section>
+
+    <section class="section" id="technologies">
+        <h2>Technologies Used</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>
+                    Stores application source code and tracks
+                    code changes through version control.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>AWS CodePipeline</h3>
+                <p>
+                    Automates the movement of source code through
+                    deployment stages.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Elastic Beanstalk</h3>
+                <p>
+                    Provides a managed environment for deploying
+                    and running the web application.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>PHP & HTML</h3>
+                <p>
+                    Application platform and web content used
+                    for the project demonstration.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Amazon EC2</h3>
+                <p>
+                    Provides compute capacity used by the
+                    Elastic Beanstalk environment.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Amazon SNS</h3>
+                <p>
+                    Used to support notification delivery
+                    for the manual approval workflow.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="workflow">
+        <h2>CI/CD Deployment Workflow</h2>
+
+        <div class="workflow">
+
+            <div>
+                <strong>01. GitHub Source</strong>
+                <p>
+                    Developer commits web application code
+                    to the GitHub repository.
+                </p>
+            </div>
+
+            <div>
+                <strong>02. AWS CodePipeline</strong>
+                <p>
+                    Pipeline detects the source change and
+                    starts the deployment workflow.
+                </p>
+            </div>
+
+            <div>
+                <strong>03. Development Deployment</strong>
+                <p>
+                    Application is deployed to the development
+                    Elastic Beanstalk environment.
+                </p>
+            </div>
+
+            <div>
+                <strong>04. Manual Approval</strong>
+                <p>
+                    Deployment requires approval before
+                    proceeding to production.
+                </p>
+            </div>
+
+            <div>
+                <strong>05. Production Deployment</strong>
+                <p>
+                    Approved changes are deployed to the
+                    production Elastic Beanstalk environment.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="results">
+        <h2>Project Objective</h2>
+
+        <p>
+            Demonstrate automated application deployment,
+            source code integration, environment management,
+            and controlled production releases using AWS
+            cloud services.
+        </p>
+
+        <a href="#about" class="btn">View Project Details</a>
+    </section>
+
+    <footer>
+        <p>AWS Cloud & DevOps Learning Project</p>
+        <p>GitHub | AWS CodePipeline | Elastic Beanstalk</p>
+    </footer>
+
+</body>
+</html>
