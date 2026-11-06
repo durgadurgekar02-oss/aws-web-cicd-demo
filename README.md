@@ -63,7 +63,7 @@ The following screenshots demonstrate the AWS CI/CD deployment workflow, manual 
 
 ### 2. Development Website Deployment
 
-![Development Website Deployment](12-development-website-deployment.png)
+![Development Website Deployment](12-development-website-deployed.png)
 
 ### 3. Pipeline Manual Approval
 
